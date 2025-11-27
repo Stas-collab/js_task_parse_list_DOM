@@ -18,7 +18,7 @@ const sortList = (arr1) => {
   list.append(...sort);
 };
 
-const getEmployeeNames = (arr2) => {
+const getEmployees = (arr2) => {
   const listOfEmployees = arr2.map((el) => ({
     name: el.textContent.trim(),
     position: el.dataset.position,
@@ -30,4 +30,7 @@ const getEmployeeNames = (arr2) => {
 };
 
 sortList(arr);
-getEmployeeNames(arr);
+
+const employees = getEmployees(arr);
+
+console.log(employees);
